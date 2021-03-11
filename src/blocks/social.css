@@ -1,0 +1,28 @@
+.social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.social__item {
+  margin-right: 15px;
+}
+
+.social__item:last-of-type {
+  margin: 0;
+}
+
+.social__link {
+  display: block;
+  text-decoration: none;
+  color: #040007;
+  transition: all 0.4s linear;
+  font-size: 16px;
+  line-height: 1.43;
+  font-weight: normal;
+}
+
+.social__link:hover {
+  color: #6da125;
+  transform: scale(1.2);
+}

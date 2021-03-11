@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сухофрукты</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body class="page">
+  <header class="header">
+    <div class="header__row header__row_place_top container">
+      <form class="search header__search">
+        <div class="search__wrapper">
+          <input class="search__input" type="text" placeholder="Поиск">
+          <span class="search__no-match hide">Ничего не найдено</span>
+          <button class="search__clear" type="button" aria-label="очистить поле поиска"></button>
+        </div>
+        <button class="search__submit" type="submit"></button>
+      </form>
+      <div class="header__tel tel tel_place_top-row">
+        <img src="./img/phone-icon.svg" alt="иконка телефонной трубки" class="tel__icon">
+        <a href="tel:+998712000224" class="tel__number">+99871-200-02-24</a>
+      </div>
+      <div class="header__email email">
+        <img src="./img/email-icon.svg" alt="иконка электронной почты" class="email__icon">
+        <a href="mailto:info@ecofruit.uz" class="email__address">info@ecofruit.uz</a>
+      </div>
+      <ul class="header__social social">
+        <li class="social__item">
+          <a href="#" class="social__link social__fb-icon"></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__insta-icon"></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__tg-icon"></a>
+        </li>
+      </ul>
+      <ul class="header__lang lang lang_desktop">
+        <li class="lang__item lang__item_active">
+          <a href="#" class="lang__link lang__link_ru">RU</a>
+        </li>
+        <li class="lang__item">
+          <a href="#" class="lang__link lang__link_uz">UZ</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header__dash"></div>
+    <div class="header__row header__row_place_bottom container">
+      <img src="./img/logo-header.svg" alt="логотип" class="logo header__logo">
+      <div class="header__line"></div>
+      <button type="button" class="toggle-menu"><span class="toggle-menu__icon"></span></button>
+      <nav class="header__main-nav main-nav">
+        <span class="main-nav__close-btn main-nav__close-icon"></span>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Товары</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Оптовикам</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Производство</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Сертификаты</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Преимущества</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__tel tel tel_place_bottom-row">
+        <img src="./img/phone-icon.svg" alt="иконка телефонной трубки" class="tel__icon">
+        <a href="tel:+998712000224" class="tel__number">+99871-200-02-24</a>
+      </div>
+      <ul class="header__lang lang lang_mobile">
+        <li class="lang__item lang__item_active">
+          <a href="#" class="lang__link lang__link_ru">RU</a>
+        </li>
+        <li class="lang__item">
+          <a href="#" class="lang__link lang__link_uz">UZ</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="page__main">
+    <section id="intro" class="intro">
+      <div class="intro__slider slider">
+        <ul class="slider__list">
+          <li class="slider__item show" style="background-image: url(./img/slide-bg-1.jpg);">
+            <img src="./img/intro-logo.svg" alt="логотип" class="slider__logo">
+            <h2 class="slider__title">Из Узбекистана с любовью</h2>
+            <p class="slider__text">
+              Сухофрукты – высушенные фрукты или ягоды с остаточной влажностью около 20%. Сушатся или естественным путем (например, на солнце), или с применением промышленных методов (например, с помощью дегидратора или сушилки для овощей).
+            </p>
+            <button type="button" class="button slider__order-button">Заказать</button>
+          </li>
+          <li class="slider__item" style="background-image: url(./img/slide-bg-2.jpg);">
+            <img src="./img/intro-logo.svg" alt="логотип" class="slider__logo">
+            <h2 class="slider__title">Из Узбекистана с любовью</h2>
+            <p class="slider__text">
+              Сухофрукты – высушенные фрукты или ягоды с остаточной влажностью около 20%. Сушатся или естественным путем (например, на солнце), или с применением промышленных методов (например, с помощью дегидратора или сушилки для овощей).
+            </p>
+            <button type="button" class="button slider__order-button">Заказать</button>
+          </li>
+          <li class="slider__item" style="background-image: url(./img/slide-bg-3.jpg);">
+            <img src="./img/intro-logo.svg" alt="логотип" class="slider__logo">
+            <h2 class="slider__title">Из Узбекистана с любовью</h2>
+            <p class="slider__text">
+              Сухофрукты – высушенные фрукты или ягоды с остаточной влажностью около 20%. Сушатся или естественным путем (например, на солнце), или с применением промышленных методов (например, с помощью дегидратора или сушилки для овощей).
+            </p>
+            <button type="button" class="button slider__order-button">Заказать</button>
+          </li>
+        </ul>
+        <button type="button" class="slider__button slider__button_prev">
+          <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+            <path fill="#040007" d="M4.2 247.5L151 99.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17L69.3 256l118.5 119.7c4.7 4.7 4.7 12.3 0 17L168 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 264.5c-4.7-4.7-4.7-12.3 0-17z"></path>
+          </svg>
+        </button>
+        <button type="button" class="slider__button slider__button_next">
+          <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+            <path fill="#040007" d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"></path>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="example">
+      <div class="wrapper">
+        <div class="slider-x">
+          <ul class="slider-x__list">
+            <li class="slider-x__item"><img src="./img/slide-bg-1.jpg" alt="" class="slider-x__img"></li>
+            <li class="slider-x__item"><img src="./img/slide-bg-2.jpg" alt="" class="slider-x__img"></li>
+            <li class="slider-x__item"><img src="./img/slide-bg-3.jpg" alt="" class="slider-x__img"></li>
+          </ul>
+        </div>
+        <button class="slider-x__button_prew">Назад</button>
+        <button class="slider-x__button_next">Вперед</button>
+      </div>
+    </section>
+  </main>
+  <script src="./vendor/mark.es6.min.js"></script>
+  <script type="module" src="./pages/index.js"></script>
+  <script>
+    let slideIndex = 1;
+    const showSlides = (n) => {
+      const slides = document.querySelectorAll('.slider-x__item');
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+
+      slides.forEach((slide, index) => {
+        slides[index]
+      })
+    }
+  </script>
+</body>
+</html>
+
+

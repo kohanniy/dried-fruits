@@ -1,0 +1,19 @@
+.page {
+  min-width: 320px;
+  max-width: 1920px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+.page__main {
+  flex-shrink: 0;
+  flex-grow: 1;
+}

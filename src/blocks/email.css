@@ -1,0 +1,42 @@
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.email__icon {
+  width: 15px;
+  height: 17px;
+  margin-right: 18px;
+}
+
+.email__address {
+  color: #575756;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: color .4s linear;
+  font-size: 16px;
+  line-height: 1.43;
+  font-weight: normal;
+}
+
+.email__address::before {
+  content: '';
+  position: absolute;
+  transition: transform 0.4s linear;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #575756;
+  transform: translateX(0);
+  box-sizing: border-box;
+}
+
+.email__address:hover::before {
+  transform: translateX(102%);
+}
+
+.email__address:hover {
+  color: #6da125;
+}

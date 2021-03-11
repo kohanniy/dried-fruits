@@ -1,0 +1,33 @@
+.toggle-menu {
+  outline: none;
+  width: 42px;
+  height: 42px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  transition: opacity 0.4s linear;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-menu:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 940px) {
+  .toggle-menu {
+    display: flex;
+    order: -1;
+  }
+}
+
+.toggle-menu__icon {
+  position: relative;
+  width: 24px;
+  height: 3px;
+  background: #133c5e;
+  display: block;
+  box-shadow: 0 -9px 0 #133c5e, 0 9px 0 #133c5e;
+}

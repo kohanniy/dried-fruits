@@ -1,0 +1,82 @@
+.tel {
+  align-items: center;
+}
+
+.tel_place_top-row {
+  display: none;
+}
+
+.tel_place_bottom-row {
+  display: flex;
+}
+
+.tel__icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+}
+
+.tel__number {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #fff;
+  background: #6da125;
+  padding: 3px 14px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: all 0.4s linear 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.tel__number:hover {
+  background: transparent;
+  color: #6da125;
+  transition: all 0.4s linear;
+}
+
+.tel__number::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(-101%);
+  transition: all 0.4s linear;
+  width: 100%;
+  height: 1px;
+  background: #6da125;
+  box-sizing: border-box;
+}
+
+.tel__number:hover::before {
+  transform: translateX(0);
+  transition: all 0.4s linear 0.3s;
+}
+
+@media (max-width: 1439px) {
+  .tel__number {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .tel_place_top-row {
+    display: flex;
+  }
+
+  .tel_place_bottom-row {
+    display: none;
+  }
+
+  .tel__number {
+    padding: 2px 14px;
+  }
+
+  .tel__icon {
+    width: 23px;
+    height: 23px;
+  }
+}
