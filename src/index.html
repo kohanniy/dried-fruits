@@ -19,11 +19,11 @@
         <button class="search__submit" type="submit"></button>
       </form>
       <div class="header__tel tel tel_place_top-row">
-        <img src="./img/phone-icon.svg" alt="иконка телефонной трубки" class="tel__icon">
+        <img src="<%=require('./img/phone-icon.svg')%>" alt="иконка телефонной трубки" class="tel__icon">
         <a href="tel:+998712000224" class="tel__number">+99871-200-02-24</a>
       </div>
       <div class="header__email email">
-        <img src="./img/email-icon.svg" alt="иконка электронной почты" class="email__icon">
+        <img src="<%=require('./img/email-icon.svg')%>" alt="иконка электронной почты" class="email__icon">
         <a href="mailto:info@ecofruit.uz" class="email__address">info@ecofruit.uz</a>
       </div>
       <ul class="header__social social">
@@ -48,7 +48,7 @@
     </div>
     <div class="header__dash"></div>
     <div class="header__row header__row_place_bottom container">
-      <img src="./img/logo-header.svg" alt="логотип" class="logo header__logo">
+      <img src="<%=require('./img/logo-header.svg')%>" alt="логотип" class="logo header__logo">
       <div class="header__line"></div>
       <button type="button" class="toggle-menu"><span class="toggle-menu__icon"></span></button>
       <nav class="header__main-nav main-nav">
@@ -81,7 +81,7 @@
         </ul>
       </nav>
       <div class="header__tel tel tel_place_bottom-row">
-        <img src="./img/phone-icon.svg" alt="иконка телефонной трубки" class="tel__icon">
+        <img src="<%=require('./img/phone-icon.svg')%>" alt="иконка телефонной трубки" class="tel__icon">
         <a href="tel:+998712000224" class="tel__number">+99871-200-02-24</a>
       </div>
       <ul class="header__lang lang lang_mobile">
@@ -98,24 +98,24 @@
     <section id="intro" class="intro">
       <div class="intro__slider slider">
         <ul class="slider__list">
-          <li class="slider__item show" style="background-image: url(./img/slide-bg-1.jpg);">
-            <img src="./img/intro-logo.svg" alt="логотип" class="slider__logo">
+          <li class="slider__item show" style="background-image: url('<%=require('./img/slide-bg-1.jpg')%>');">
+            <img src="<%=require('./img/intro-logo.svg')%>" alt="логотип" class="slider__logo">
             <h2 class="slider__title">Из Узбекистана с любовью</h2>
             <p class="slider__text">
               Сухофрукты – высушенные фрукты или ягоды с остаточной влажностью около 20%. Сушатся или естественным путем (например, на солнце), или с применением промышленных методов (например, с помощью дегидратора или сушилки для овощей).
             </p>
             <button type="button" class="button slider__order-button">Заказать</button>
           </li>
-          <li class="slider__item" style="background-image: url(./img/slide-bg-2.jpg);">
-            <img src="./img/intro-logo.svg" alt="логотип" class="slider__logo">
+          <li class="slider__item" style="background-image: url(<%=require('./img/slide-bg-2.jpg')%>);">
+            <img src="<%=require('./img/intro-logo.svg')%>" alt="логотип" class="slider__logo">
             <h2 class="slider__title">Из Узбекистана с любовью</h2>
             <p class="slider__text">
               Сухофрукты – высушенные фрукты или ягоды с остаточной влажностью около 20%. Сушатся или естественным путем (например, на солнце), или с применением промышленных методов (например, с помощью дегидратора или сушилки для овощей).
             </p>
             <button type="button" class="button slider__order-button">Заказать</button>
           </li>
-          <li class="slider__item" style="background-image: url(./img/slide-bg-3.jpg);">
-            <img src="./img/intro-logo.svg" alt="логотип" class="slider__logo">
+          <li class="slider__item" style="background-image: url(<%=require('./img/slide-bg-3.jpg')%>);">
+            <img src="<%=require('./img/intro-logo.svg')%>" alt="логотип" class="slider__logo">
             <h2 class="slider__title">Из Узбекистана с любовью</h2>
             <p class="slider__text">
               Сухофрукты – высушенные фрукты или ягоды с остаточной влажностью около 20%. Сушатся или естественным путем (например, на солнце), или с применением промышленных методов (например, с помощью дегидратора или сушилки для овощей).
@@ -135,45 +135,9 @@
         </button>
       </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section class="example">
-      <div class="wrapper">
-        <div class="slider-x">
-          <ul class="slider-x__list">
-            <li class="slider-x__item"><img src="./img/slide-bg-1.jpg" alt="" class="slider-x__img"></li>
-            <li class="slider-x__item"><img src="./img/slide-bg-2.jpg" alt="" class="slider-x__img"></li>
-            <li class="slider-x__item"><img src="./img/slide-bg-3.jpg" alt="" class="slider-x__img"></li>
-          </ul>
-        </div>
-        <button class="slider-x__button_prew">Назад</button>
-        <button class="slider-x__button_next">Вперед</button>
-      </div>
-    </section>
   </main>
   <script src="./vendor/mark.es6.min.js"></script>
   <script type="module" src="./pages/index.js"></script>
-  <script>
-    let slideIndex = 1;
-    const showSlides = (n) => {
-      const slides = document.querySelectorAll('.slider-x__item');
-      if (n > slides.length) {
-        slideIndex = 1;
-      }
-
-      if (n < 1) {
-        slideIndex = slides.length;
-      }
-
-      slides.forEach((slide, index) => {
-        slides[index]
-      })
-    }
-  </script>
 </body>
 </html>
 

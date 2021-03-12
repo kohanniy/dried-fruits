@@ -1,5 +1,6 @@
 @import url(../vendor/normalize.css);
-@import url(../vendor/icon-font.css);
+@import url(../fonts/icon-fonts/icon-fonts.css);
+@import url(../fonts/main-fonts/main-fonts.css);
 @import url(../blocks/page.css);
 @import url(../blocks/header.css);
 @import url(../blocks/search.css);
@@ -20,11 +21,11 @@
   position: relative;
 }
 
-.slider {
-  /* perspective: 1000px;
+/* .slider {
+  perspective: 1000px;
   perspective-origin: 50% 50%;
-  transform-style: preserve-3d; */
-}
+  transform-style: preserve-3d;
+} */
 
 .slider__list {
   width: 100%;
@@ -205,96 +206,3 @@
     margin-top: 80px;
   }
 }
-
-
-width: 1290px;
-height: 653px;
-max-height: 653px;
-transform: perspective(600px);
-backface-visibility: hidden;
-transform-style: flat;
-
-
-.wp-block-themepunch-revslider {
-  position: relative;
-}
-
-.rs-fullwidth-wrap {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: block;
-  overflow: visible;
-  max-width: none !important;
-}
-
-rs-module-wrap {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  display: block;
-
-  /*инлайновые*/
-  background: transparent;
-  padding: 0px;
-  margin: 0px auto;
-  width: 1025px;
-  height: 598px;
-  visibility: visible;
-  position: absolute;
-  overflow: visible;
-  left: 0px;
-}
-
-rs-module {
-  position: relative;
-  overflow: hidden;
-  display: block;
-
-  /*инлайновые*/
-  width: 1025px;
-  height: 598px;
-  max-height: 598px;
-  transform: perspective(600px);
-  backface-visibility: hidden;
-  transform-style: flat;
-}
-
-.wrapper {
-  width: 100%;
-}
-
-.slider-x {
-  width: 100%;
-  perspective: 1200px;
-}
-
-.slider-x__list {
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  transform-style: preserve-3d;
-}
-
-.slider-x__item {
-  width: 100%;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-.slider-x__item:first-of-type {
-  transform: translateZ(100px);
-}
-
-.slider-x__item:nth-of-type(2) {
-  transform: rotateX(-270deg) translateY(-100px);
-  transform-origin: top center;
-}
-
-.slider-x__img {
-  width: 100%;
-}
-
