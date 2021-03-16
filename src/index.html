@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сухофрукты</title>
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="icon" href="<%=require('./img/favicon.ico')%>">
 </head>
 <body class="page">
   <header class="header">
@@ -96,48 +96,49 @@
   </header>
   <main class="page__main">
     <section id="intro" class="intro">
-      <div class="intro__slider slider">
-        <ul class="slider__list">
-          <li class="slider__item show" style="background-image: url('<%=require('./img/slide-bg-1.jpg')%>');">
-            <img src="<%=require('./img/intro-logo.svg')%>" alt="логотип" class="slider__logo">
-            <h2 class="slider__title">Из Узбекистана с любовью</h2>
-            <p class="slider__text">
-              Сухофрукты – высушенные фрукты или ягоды с остаточной влажностью около 20%. Сушатся или естественным путем (например, на солнце), или с применением промышленных методов (например, с помощью дегидратора или сушилки для овощей).
-            </p>
-            <button type="button" class="button slider__order-button">Заказать</button>
-          </li>
-          <li class="slider__item" style="background-image: url(<%=require('./img/slide-bg-2.jpg')%>);">
-            <img src="<%=require('./img/intro-logo.svg')%>" alt="логотип" class="slider__logo">
-            <h2 class="slider__title">Из Узбекистана с любовью</h2>
-            <p class="slider__text">
-              Сухофрукты – высушенные фрукты или ягоды с остаточной влажностью около 20%. Сушатся или естественным путем (например, на солнце), или с применением промышленных методов (например, с помощью дегидратора или сушилки для овощей).
-            </p>
-            <button type="button" class="button slider__order-button">Заказать</button>
-          </li>
-          <li class="slider__item" style="background-image: url(<%=require('./img/slide-bg-3.jpg')%>);">
-            <img src="<%=require('./img/intro-logo.svg')%>" alt="логотип" class="slider__logo">
-            <h2 class="slider__title">Из Узбекистана с любовью</h2>
-            <p class="slider__text">
-              Сухофрукты – высушенные фрукты или ягоды с остаточной влажностью около 20%. Сушатся или естественным путем (например, на солнце), или с применением промышленных методов (например, с помощью дегидратора или сушилки для овощей).
-            </p>
-            <button type="button" class="button slider__order-button">Заказать</button>
-          </li>
-        </ul>
-        <button type="button" class="slider__button slider__button_prev">
+      <div class="intro__container">
+        <div class="intro__slider swiper-container">
+          <ul class="intro__wrapper swiper-wrapper">
+            <li class="intro__slide swiper-slide" style="background-image: url('<%=require('./img/slide-bg-1.jpg')%>');">
+              <img src="<%=require('./img/intro-logo.svg')%>" alt="" class="intro__logo">
+              <h2 class="intro__title">Из Узбекистана с любовью</h2>
+              <p class="intro__text">Сухофрукты – высушенные фрукты или ягоды с остаточной влажностью около 20%. Сушатся или естественным путем (например, на солнце), или с применением промышленных методов (например, с помощью дегидратора или сушилки для овощей).</p>
+              <button type="button" class="order-button intro__order-button">Заказать</button>
+            </li>
+            <li class="intro__slide swiper-slide" style="background-image: url('<%=require('./img/slide-bg-2.jpg')%>');">
+              <img src="<%=require('./img/intro-logo.svg')%>" alt="" class="intro__logo">
+              <h2 class="intro__title">Из Ташкента с завистью</h2>
+              <p class="intro__text">Сухофрукты – высушенные фрукты или ягоды с остаточной влажностью около 20%. Сушатся или естественным путем (например, на солнце), или с применением промышленных методов (например, с помощью дегидратора или сушилки для овощей).</p>
+              <button type="button" class="order-button intro__order-button">Заказать</button>
+            </li>
+            <li class="intro__slide swiper-slide" style="background-image: url('<%=require('./img/slide-bg-3.jpg')%>');">
+              <img src="<%=require('./img/intro-logo.svg')%>" alt="" class="intro__logo">
+              <h2 class="intro__title">Из говна конфетка</h2>
+              <p class="intro__text">Сухофрукты – высушенные фрукты или ягоды с остаточной влажностью около 20%. Сушатся или естественным путем (например, на солнце), или с применением промышленных методов (например, с помощью дегидратора или сушилки для овощей).</p>
+              <button type="button" class="order-button intro__order-button">Заказать</button>
+            </li>
+            <!-- <li class="intro__slide swiper-slide" style="background-image: url('<%=require('./img/slide-bg-3.jpg')%>');">
+              <img src="<%=require('./img/intro-logo.svg')%>" alt="" class="intro__logo">
+              <h2 class="intro__title">Проверочный слайд</h2>
+              <p class="intro__text">lorem ipsum  sfsdgdfgdfgdfbfgbtsgtvgrtgtetrgergwcfdasdds</p>
+              <button type="button" class="order-button intro__order-button">Заказать</button>
+            </li> -->
+          </ul>
+        </div>
+        <button type="button" class="intro__button intro__button_prev">
           <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
             <path fill="#040007" d="M4.2 247.5L151 99.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17L69.3 256l118.5 119.7c4.7 4.7 4.7 12.3 0 17L168 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 264.5c-4.7-4.7-4.7-12.3 0-17z"></path>
           </svg>
         </button>
-        <button type="button" class="slider__button slider__button_next">
+        <button type="button" class="intro__button intro__button_next">
           <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
             <path fill="#040007" d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"></path>
           </svg>
         </button>
       </div>
     </section>
+
   </main>
-  <script src="./vendor/mark.es6.min.js"></script>
-  <script type="module" src="./pages/index.js"></script>
 </body>
 </html>
 

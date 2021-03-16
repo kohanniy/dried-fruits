@@ -1,0 +1,160 @@
+.intro {
+  width: 100%;
+  overflow: hidden;
+}
+
+.intro__container {
+  position: relative;
+  height: 100vh;
+}
+
+.intro__slider {
+  width: 100%;
+  height: 100%;
+}
+
+.intro__wrapper {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.intro__slide {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.intro__logo {
+  width: 33%;
+  margin-top: 163px;
+  margin-bottom: 32px;
+}
+
+.intro__title {
+  width: 90%;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  font-size: 42px;
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 43px;
+}
+
+.intro__word {
+  display: inline-block;
+}
+
+.intro__text {
+  width: 46%;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1.2;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.intro__order-button {
+  background: #6da125;
+  border-radius: 5px;
+  margin-bottom: 363px;
+  transition: color 0.4s linear, background 0.4s linear;
+}
+
+.intro__order-button:hover {
+  color: #040007;
+  background: #fff;
+}
+
+.intro__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.4s linear;
+  position: absolute;
+  bottom: 58%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.intro__button>svg {
+  width: 10px;
+}
+
+.intro__button:hover {
+  background: #6da125;
+}
+
+.intro__button svg path {
+  transition: all 0.4s linear;
+}
+
+.intro__button:hover svg path {
+  fill: #fff;
+}
+
+.intro__button_prev {
+  left: 93px;
+}
+
+.intro__button_prev svg {
+  transform: translateX(-1px);
+}
+
+.intro__button_next {
+  right: 93px;
+}
+
+.intro__button_next svg {
+  transform: translateX(1px);
+}
+
+@media (max-width: 940px) {
+  .intro__logo {
+    width: 60%;
+    margin-top: 120px;
+  }
+
+  .intro__text {
+    width: 80%;
+  }
+
+  .intro__button_prev {
+    left: 20px;
+  }
+
+  .intro__button_next {
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro__button {
+    display: none;
+  }
+
+  .intro__title {
+    font-size: 38px;
+  }
+
+  .intro__logo {
+    margin-top: 80px;
+  }
+}

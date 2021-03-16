@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'social-icon';
-  src: url('./social-icon.woff2') format('woff2'),
-       url('./social-icon.woff') format('woff');
+  src: url('./social-icon.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -9,8 +8,7 @@
 
 @font-face {
   font-family: 'close-icon';
-  src: url('./close-icon.woff2') format('woff2'),
-       url('./close-icon.woff') format('woff');
+  src: url('./close-icon.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
