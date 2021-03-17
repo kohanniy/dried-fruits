@@ -54,7 +54,6 @@ const introSlider = new Swiper('.intro__slider', {
   autoplay: {
     disableOnInteraction: false,
     delay: 5000,
-
   },
   a11y: {
     firstSlideMessage: 'Первый слайд',

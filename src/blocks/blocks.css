@@ -1,0 +1,34 @@
+.blocks {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.blocks__item {
+  width: calc(100% / 3);
+  height: 100%;
+}
+
+.blocks__item_color_red {
+  background: #e52d14;
+}
+
+.blocks__item_color_green {
+  background: #6da125;
+}
+
+.blocks__item_color_yellow {
+  background: #f3ba00;
+}
+
+@media (max-width: 768px) {
+  .blocks {
+    flex-direction: column;
+  }
+
+  .blocks__item {
+    width: 100%;
+    height: 410px;
+    margin-top: 15px;
+  }
+}

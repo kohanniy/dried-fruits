@@ -1,0 +1,28 @@
+.slider-btn {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.4s linear;
+  position: absolute;
+  cursor: pointer;
+}
+
+.slider-btn>svg {
+  width: 10px;
+}
+
+.slider-btn:hover {
+  background: #6da125;
+}
+
+.slider-btn svg path {
+  transition: all 0.4s linear;
+}
+
+.slider-btn:hover svg path {
+  fill: #fff;
+}
