@@ -35,6 +35,7 @@
 }
 
 .product__link {
+  width: 100%;
   color: #040007;
   text-decoration: none;
   transition: color 0.4s linear;

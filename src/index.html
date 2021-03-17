@@ -138,7 +138,7 @@
       </div>
     </section>
     <section id="products" class="section products">
-      <button class="expand-list-btn" type="button"></button>
+      <button class="slider-btn products__expand-list" type="button"></button>
       <div class="container products__container">
         <ul class="products__blocks blocks">
           <li class="blocks__item blocks__item_color_red">fsdgfsdg</li>
@@ -147,64 +147,77 @@
         </ul>
         <h2 class="section__title products__title">Товары</h2>
         <p class="section__subtitle">Ассортимент продукции</p>
-        <div class="products__slider">
-          <ul class="products__list">
-            <li class="products__item product">
-              <a href="" class="product__link">
-                <figure class="product__figure">
-                  <img src="<%=require('./img/dried-fruits.jpg')%>" alt="сухофрукты" class="product__img">
-                </figure>
-              </a>
-              <h3 class="product__heading">
-                <a href="" class="product__link">Сухофрукты</a>
-              </h3>
-              <p class="product__position">23 позиции</p>
-            </li>
-            <li class="products__item product">
-              <a href="" class="product__link">
-                <figure class="product__figure">
-                  <img src="<%=require('./img/dried-fruits.jpg')%>" alt="сухофрукты" class="product__img">
-                </figure>
-              </a>
-              <h3 class="product__heading">
-                <a href="" class="product__link">Сухофрукты</a>
-              </h3>
-              <p class="product__position">23 позиции</p>
-            </li>
-            <li class="products__item product">
-              <a href="" class="product__link">
-                <figure class="product__figure">
-                  <img src="<%=require('./img/dried-fruits.jpg')%>" alt="сухофрукты" class="product__img">
-                </figure>
-              </a>
-              <h3 class="product__heading">
-                <a href="" class="product__link">Сухофрукты</a>
-              </h3>
-              <p class="product__position">23 позиции</p>
-            </li>
-            <li class="products__item product">
-              <a href="" class="product__link">
-                <figure class="product__figure">
-                  <img src="<%=require('./img/dried-fruits.jpg')%>" alt="сухофрукты" class="product__img">
-                </figure>
-              </a>
-              <h3 class="product__heading">
-                <a href="" class="product__link">Сухофрукты</a>
-              </h3>
-              <p class="product__position">23 позиции</p>
-            </li>
-            <li class="products__item product">
-              <a href="" class="product__link">
-                <figure class="product__figure">
-                  <img src="<%=require('./img/dried-fruits.jpg')%>" alt="сухофрукты" class="product__img">
-                </figure>
-              </a>
-              <h3 class="product__heading">
-                <a href="" class="product__link">Сухофрукты</a>
-              </h3>
-              <p class="product__position">23 позиции</p>
-            </li>
-          </ul>
+        <div class="products__wrapper">
+          <div class="products__slider swiper-container">
+            <ul class="products__list swiper-wrapper">
+              <li class="products__item product swiper-slide">
+                <a href="1dried-fruits" class="product__link">
+                  <figure class="product__figure">
+                    <img src="<%=require('./img/dried-fruits.jpg')%>" alt="сухофрукты" class="product__img">
+                  </figure>
+                </a>
+                <h3 class="product__heading">
+                  <a href="1dried-fruits" class="product__link">Сухофрукты</a>
+                </h3>
+                <p class="product__position">23 позиции</p>
+              </li>
+              <li class="products__item product swiper-slide">
+                <a href="2nuts" class="product__link">
+                  <figure class="product__figure">
+                    <img src="<%=require('./img/nuts.jpg')%>" alt="сухофрукты" class="product__img">
+                  </figure>
+                </a>
+                <h3 class="product__heading">
+                  <a href="2nuts" class="product__link">Орехи</a>
+                </h3>
+                <p class="product__position">13 позиций</p>
+              </li>
+              <li class="products__item product swiper-slide">
+                <a href="3legumes" class="product__link">
+                  <figure class="product__figure">
+                    <img src="<%=require('./img/legumes.jpg')%>" alt="сухофрукты" class="product__img">
+                  </figure>
+                </a>
+                <h3 class="product__heading">
+                  <a href="3legumes" class="product__link">Бобовые</a>
+                </h3>
+                <p class="product__position">17 позиций</p>
+              </li>
+              <li class="products__item product swiper-slide">
+                <a href="4fruit" class="product__link">
+                  <figure class="product__figure">
+                    <img src="<%=require('./img/fruit.jpg')%>" alt="сухофрукты" class="product__img">
+                  </figure>
+                </a>
+                <h3 class="product__heading">
+                  <a href="4fruit" class="product__link">Фрукты</a>
+                </h3>
+                <p class="product__position">22 позиции</p>
+              </li>
+              <li class="products__item product swiper-slide">
+                <a href="5vegetables" class="product__link">
+                  <figure class="product__figure">
+                    <img src="<%=require('./img/vegetables.jpg')%>" alt="сухофрукты" class="product__img">
+                  </figure>
+                </a>
+                <h3 class="product__heading">
+                  <a href="5vegetables" class="product__link">Овощи</a>
+                </h3>
+                <p class="product__position">16 позиций</p>
+              </li>
+              <li class="products__item product swiper-slide">
+                <a href="6melon" class="product__link">
+                  <figure class="product__figure">
+                    <img src="<%=require('./img/melon.png')%>" alt="сухофрукты" class="product__img">
+                  </figure>
+                </a>
+                <h3 class="product__heading">
+                  <a href="6melon" class="product__link">Бахча</a>
+                </h3>
+                <p class="product__position">3 позиции</p>
+              </li>
+            </ul>
+          </div>
           <button type="button" class="slider-btn products__button products__button_prev">
             <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
               <path fill="#040007" d="M4.2 247.5L151 99.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17L69.3 256l118.5 119.7c4.7 4.7 4.7 12.3 0 17L168 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 264.5c-4.7-4.7-4.7-12.3 0-17z"></path>
@@ -219,7 +232,6 @@
       </div>
     </section>
     <section>
-      rgsdgsdfgdfgdfg
     </section>
   </main>
 </body>

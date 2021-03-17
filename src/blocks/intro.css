@@ -87,6 +87,11 @@
   height: 40px;
   z-index: 10;
   bottom: 50%;
+  background: #fff;
+}
+
+.intro__button:hover {
+  background: #6da125;
 }
 
 .intro__button_prev {

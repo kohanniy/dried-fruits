@@ -17,6 +17,7 @@ import Search from '../components/Search';
 import {
   mainNavSelectors,
   searchSelectors,
+  productsSliderData,
 } from '../utils/constants';
 
 import {
@@ -33,6 +34,7 @@ const handleLinkClick = () => {
 const searchArea = new Mark(document.querySelector('.page'));
 const mainNav = new MainNav(mainNavSelectors, handleLinkClick);
 const search = new Search(searchSelectors, searchArea, scrollTo);
+const productsSlider = new Swiper('.products__slider', productsSliderData);
 const introSlider = new Swiper('.intro__slider', {
   effect: 'cube',
   direction: 'horizontal',

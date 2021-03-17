@@ -2,7 +2,6 @@
   border-radius: 50%;
   border: none;
   outline: none;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,10 +12,6 @@
 
 .slider-btn>svg {
   width: 10px;
-}
-
-.slider-btn:hover {
-  background: #6da125;
 }
 
 .slider-btn svg path {
