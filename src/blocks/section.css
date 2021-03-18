@@ -1,5 +1,5 @@
 .section {
-  padding-top: 60px;
+  padding: 60px 0 100px;
   position: relative;
 }
 
@@ -15,21 +15,24 @@
 }
 
 .section__title {
-  margin: 0 0 15px 0;
+  margin: 0 auto 15px;
   font-size: 22px;
   font-weight: bold;
   line-height: 1.2;
   text-transform: uppercase;
   color: #040007;
+  text-align: center;
 }
 
 .section__subtitle {
-  margin: 0 0 85px 0;
+  width: 643px;
+  margin: 0 auto 85px;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.2;
   color: #b2b2b2;
   position: relative;
+  text-align: center;
 }
 
 .section__subtitle::after {
@@ -42,4 +45,14 @@
   bottom: -37px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 0 50px;
+  }
+
+  .section__subtitle {
+    width: 90%;
+  }
 }

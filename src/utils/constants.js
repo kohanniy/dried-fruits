@@ -31,7 +31,7 @@ export const productsSliderData = {
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetween: 20,
     },
     1024: {
@@ -39,4 +39,14 @@ export const productsSliderData = {
       spaceBetween: 30,
     },
   },
+};
+
+export const countdownSelectors = {
+  wrapper: '.timer__zone_countdown',
+  countdown: '.timer__countdown',
+  days: '.js-days',
+  hours: '.js-hours',
+  minutes: '.js-minutes',
+  seconds: '.js-seconds',
+  button: '.timer__order-button',
 };

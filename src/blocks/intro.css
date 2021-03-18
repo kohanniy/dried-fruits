@@ -73,7 +73,6 @@
 
 .intro__order-button {
   background: #6da125;
-  border-radius: 5px;
   transition: color 0.4s linear, background 0.4s linear;
 }
 

@@ -13,11 +13,13 @@ import {
 
 import MainNav from '../components/MainNav';
 import Search from '../components/Search';
+import Countdown from '../components/Countdown';
 
 import {
   mainNavSelectors,
   searchSelectors,
   productsSliderData,
+  countdownSelectors,
 } from '../utils/constants';
 
 import {
@@ -34,6 +36,7 @@ const handleLinkClick = () => {
 const searchArea = new Mark(document.querySelector('.page'));
 const mainNav = new MainNav(mainNavSelectors, handleLinkClick);
 const search = new Search(searchSelectors, searchArea, scrollTo);
+const countdown = new Countdown(countdownSelectors);
 const productsSlider = new Swiper('.products__slider', productsSliderData);
 const introSlider = new Swiper('.intro__slider', {
   effect: 'cube',
@@ -146,4 +149,5 @@ introSlider.on('slideChangeTransitionEnd', function () {
 
 mainNav.enable();
 search.enable();
+countdown.enable();
 createWrapperForWordsInIntroTitle(introSlider);

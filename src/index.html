@@ -231,7 +231,48 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="timer" class="section timer">
+      <h2 class="section__title">Оптовикам</h2>
+      <p class="section__subtitle">Компания «EcoFruit» с удовольствием сотрудничает с оптовыми покупателями</p>
+      <div class="timer__container">
+        <div class="timer__banner-container">
+          <img src="<%=require('./img/timer-banner.png')%>" alt="баннер с изображением кураги" class="timer__banner">
+        </div>
+        <div class="timer__wrapper">
+          <div class="timer__content">
+            <div class="timer__zone timer__zone_title">
+              <img src="<%=require('./img/timer-icon.svg')%>" alt="иконка" class="timer__icon">
+              <p class="timer__title">Специальное<br> предложение</p>
+            </div>
+            <div class="timer__zone timer__zone_subtitle">
+              <p class="timer__subtitle">При покупке 20 тонн</p>
+              <p class="timer__price">$1000 - $2000</p>
+            </div>
+            <div class="timer__zone timer__zone_countdown">
+              <p class="timer__description">До конца акции осталось</p>
+              <ul class="timer__countdown" data-year="2021" data-month="" data-day="18" data-hour="18" data-minute="10">
+                <li class="timer__item">
+                  <p class="timer__amount js-days"></p>
+                  <p class="timer__text">Дней</p>
+                </li>
+                <li class="timer__item">
+                  <p class="timer__amount js-hours"></p>
+                  <p class="timer__text">Часов</p>
+                </li>
+                <li class="timer__item">
+                  <p class="timer__amount js-minutes"></p>
+                  <p class="timer__text">Минут</p>
+                </li>
+                <li class="timer__item">
+                  <p class="timer__amount js-seconds"></p>
+                  <p class="timer__text">Секунд</p>
+                </li>
+              </ul>
+            </div>
+            <button type="button" class="order-button timer__order-button">Заказать</button>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </body>
