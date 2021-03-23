@@ -40,6 +40,13 @@ module.exports = {
         },
       },
       {
+        test: /\.(mp4|ogv|webm|mov)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'video/[name].[ext]',
+        },
+      },
+      {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,

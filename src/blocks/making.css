@@ -1,0 +1,37 @@
+.making {
+  padding-bottom: 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+.making__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.making__video {
+  width: 66%;
+  z-index: 2;
+  margin: 0;
+}
+
+.making__parallax {
+  position: absolute;
+  left: -5%;
+  height: 100%;
+  width: 110%;
+  bottom: -15px;
+}
+
+@media (max-width: 1024px) {
+  .making__video {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .making__video {
+    width: 100%;
+  }
+}

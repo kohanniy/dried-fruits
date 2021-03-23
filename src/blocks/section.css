@@ -1,6 +1,7 @@
 .section {
-  padding: 60px 0 100px;
   position: relative;
+  padding-top: 60px;
+  box-sizing: border-box;
 }
 
 .section::after {
@@ -49,10 +50,15 @@
 
 @media (max-width: 768px) {
   .section {
-    padding: 40px 0 50px;
+    padding-top: 40px;
   }
 
   .section__subtitle {
     width: 90%;
+    margin-bottom: 60px;
+  }
+
+  .section__subtitle:after {
+    bottom: -30px;
   }
 }

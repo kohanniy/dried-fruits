@@ -1,0 +1,23 @@
+.parallax {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.parallax__layer {
+  width: 100%;
+  height: 100%;
+  background: bottom/100% repeat-x;
+}
+
+.parallax__layer_pic_circles {
+  background-image: url(../img/circles.svg);
+}
+
+.parallax__layer_pic_big-wave {
+  background-image: url(../img/big-wave.svg);
+}
+
+.parallax__layer_pic_small-wave {
+  background-image: url(../img/small-wave.svg);
+}

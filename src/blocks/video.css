@@ -1,0 +1,100 @@
+.video {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  border: 4px solid transparent;
+  background-image: linear-gradient(to right, #000 5%, #dbdcdc 15%, #000 30%, #dbdcdc 80%, #000 95%),
+    linear-gradient(to bottom, #000 5%, #dbdcdc 15%, #000 30%, #dbdcdc 80%, #000 95%),
+    linear-gradient(to left, #000 5%, #dbdcdc 15%, #000 30%, #dbdcdc 80%, #000 95%),
+    linear-gradient(to top, #000 5%, #dbdcdc 15%, #000 30%, #dbdcdc 80%, #000 95%);
+  background-origin: border-box;
+  background-size: 100% 4px, 4px 100%, 100% 6px, 4px 100%;
+  background-position: top left, top right, bottom right, bottom left;
+  background-repeat: no-repeat;
+}
+
+.video__player {
+  width: 100%;
+  display: flex;
+  object-fit: fill;
+}
+
+.video__controls {
+  width: 98%;
+  position: absolute;
+  bottom: 5px;
+  left: 1%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s linear, visibility 0.4s linear;
+}
+
+.video:hover .video__controls {
+  opacity: 1;
+  visibility: visible;
+}
+
+.video__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s linear;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
+.video__overlay_hidden {
+  transition-delay: 0.15s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.video__play-icon-wrap {
+  width: 113px;
+  height: 113px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.3s linear, transform 0.3s linear;
+  transform-origin: center;
+  border-radius: 50%;
+  background: #dbdcdc url(../img/main-play-bg.svg) center/100% no-repeat;
+}
+
+.video__overlay_hidden .video__play-icon-wrap {
+  transform: scale(0.1);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.video__play-icon {
+  width: 45px;
+  transform: translateX(6px);
+}
+
+.video__play-icon path {
+  transition: fill 0.4s linear;
+}
+
+.video__play-icon-wrap:hover .video__play-icon path {
+  fill: #6da125;
+}
+
+@media (max-width: 575px) {
+  .video__play-icon-wrap {
+    width: 70px;
+    height: 70px;
+  }
+
+  .video__play-icon {
+    width: 26px;
+    transform: translateX(4px);
+  }
+}

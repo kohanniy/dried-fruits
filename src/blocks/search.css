@@ -22,6 +22,24 @@
   background: transparent;
 }
 
+.search__input::-webkit-input-placeholder {
+  color: #dadada;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.search__input::-moz-placeholder {
+  color: #dadada;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #dadada;
+  font-size: 14px;
+  line-height: 1;
+}
+
 .search__input::placeholder {
   color: #dadada;
   font-size: 14px;

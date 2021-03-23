@@ -250,7 +250,7 @@
             </div>
             <div class="timer__zone timer__zone_countdown">
               <p class="timer__description">До конца акции осталось</p>
-              <ul class="timer__countdown" data-year="2021" data-month="" data-day="18" data-hour="18" data-minute="10">
+              <ul class="timer__countdown" data-year="2021" data-month="7" data-day="18" data-hour="18" data-minute="10">
                 <li class="timer__item">
                   <p class="timer__amount js-days"></p>
                   <p class="timer__text">Дней</p>
@@ -273,6 +273,52 @@
           </div>
         </div>
       </div>
+    </section>
+    <section id="making" class="making section">
+      <div class="container making__container">
+        <h2 class="section__title">Производство</h2>
+        <p class="section__subtitle">Все инспекции и исследования продукции компании «EcoFruit» проходят с высочайшим результатом</p>
+        <figure class="making__video video">
+          <video poster="<%=require('./img/video-poster.jpg')%>" preload="metadata" class="video__player">
+            <source src="<%=require('./video/prodigy.mp4')%>" type="video/mp4">
+            <source src="<%=require('./video/prodigy.ogv')%>" type="video/ogg">
+            <source src="<%=require('./video/prodigy.webm')%>" type="video/webm">
+          </video>
+          <div class="video__controls controls">
+            <button type="button" class="controls__element controls__action controls__action_type_play"></button>
+            <button type="button" class="controls__element controls__action controls__action_type_pause"></button>
+            <button type="button" class="controls__element controls__action controls__action_type_fast-forward"></button>
+            <button type="button" class="controls__element controls__action controls__action_type_rewind"></button>
+            <div class="controls__element controls__progress">
+              <span class="controls__progress-bar"></span>
+            </div>
+            <div class="controls__element controls__duration">00:00/00:00</div>
+            <button type="button" class="controls__element controls__action controls__mute controls__mute_false"></button>
+            <input type="range" value="100" max="100" title="Громкость" class="controls__element controls__volume">
+          </div>
+          <div class="video__overlay">
+            <div class="video__play-icon-wrap">
+              <svg class="video__play-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 11.87 23.6">
+                <path d="M11.37,10.49,1.23.37C.89,0,.47-.15.18.16S0,.55,0,1.13V22.47c0,.57,0,.78.18,1s.71.12,1.05-.22L11.37,13.09a1.73,1.73,0,0,0,.5-1.29A1.77,1.77,0,0,0,11.37,10.49Z"/>
+              </svg>
+            </div>
+          </div>
+        </figure>
+      </div>
+      <ul class="making__parallax parallax js-scene-1">
+        <li data-depth-x="0.2" data-depth-y="0.25" class="parallax__layer parallax__layer_pic_circles"></li>
+        <li data-depth-x="0.2" class="parallax__layer parallax__layer_pic_big-wave">
+        </li>
+        <li data-depth-x="-0.2" class="parallax__layer parallax__layer_pic_small-wave"></li>
+      </ul>
+    </section>
+    <section>
+      asdfdsfdf<br>
+      asdfdsfdf<br>
+      asdfdsfdf<br>
+      asdfdsfdf<br>
+      asdfdsfdf<br>
+      asdfdsfdf<br>
     </section>
   </main>
 </body>
