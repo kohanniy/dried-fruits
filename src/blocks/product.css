@@ -48,15 +48,28 @@
 .product__figure {
   width: 100%;
   margin: 0;
-  aspect-ratio: 1 / 1;
+  position: relative;
+  /* aspect-ratio: 1 / 1; */
   overflow: hidden;
   border-radius: 50%;
   background: #eeedee;
 }
 
+.product__figure::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+}
+
 .product__img {
   width: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .product__link:hover .product__img {
