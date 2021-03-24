@@ -36,14 +36,11 @@ import {
 
 Swiper.use([Navigation, Pagination, A11y, Autoplay, EffectCube]);
 
-const handleLinkClick = () => {
-  console.log('ghbdtn');
-};
-
 const makingBg = document.querySelector('.js-scene-1');
+const pageForm = document.querySelector('.order__form');
 
 const searchArea = new Mark(document.querySelector('.page'));
-const mainNav = new MainNav(mainNavSelectors, handleLinkClick);
+const mainNav = new MainNav(mainNavSelectors, scrollTo);
 const search = new Search(searchSelectors, searchArea, scrollTo);
 const countdown = new Countdown(countdownSelectors);
 const videoPlayer = new VideoPlayer(videoPlayerSelectors, convertSecToMin);
@@ -51,13 +48,16 @@ const parallaxMakingBg = new Parallax(makingBg, { hoverOnly: true });
 const productsSlider = new Swiper('.products__slider', productsSliderData);
 const introSlider = new Swiper('.intro__slider', introSliderData);
 
-introSlider.on('slideChangeTransitionStart', hideIntroSlideElements);
-
-introSlider.on('slideChangeTransitionEnd', showIntroSlideElements);
-
 mainNav.enable();
 search.enable();
 countdown.enable();
 videoPlayer.setEventListeners();
 videoPlayer.setBackgroundVolume();
 createWrapperForWordsInIntroTitle(introSlider);
+
+introSlider.on('slideChangeTransitionStart', hideIntroSlideElements);
+introSlider.on('slideChangeTransitionEnd', showIntroSlideElements);
+
+pageForm.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+});

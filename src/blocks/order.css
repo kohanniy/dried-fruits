@@ -1,0 +1,41 @@
+.order {
+  padding-top: 50px;
+  padding-bottom: 75px;
+  background: #f2b903 url(../img/order-bg.png) center/cover no-repeat;
+  box-sizing: border-box;
+}
+
+.order__container {
+  padding: 0 98px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.order__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+.order__form {
+  width: 100%;
+}
+
+@media (max-width: 1279px) {
+  .order__container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .order {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}

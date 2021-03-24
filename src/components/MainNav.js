@@ -17,23 +17,23 @@ export default class MainNav {
     this._header.classList.remove('opened');
   }
 
-  // _goToSection(el) {
-  //   const target = document.querySelector(el.hash);
-  //   const position = target.getBoundingClientRect().top + window.pageYOffset;
-  //   this._handleLinkClick(position);
-  // }
+  _goToSection(el) {
+    const target = document.querySelector(el.hash);
+    const position = target.getBoundingClientRect().top + window.pageYOffset;
+    this._handleLinkClick(position);
+  }
 
   _setEventListeners() {
     this._openButton.addEventListener('click', this._show);
     this._closeButton.addEventListener('click', this._hide);
 
-    // this._navigation.addEventListener('click', (evt) => {
-    //   if (evt.target.classList.contains('main-nav__link')) {
-    //     evt.preventDefault();
-    //     this._goToSection(evt.target);
-    //     this._hide();
-    //   }
-    // });
+    this._navigation.addEventListener('click', (evt) => {
+      if (evt.target.classList.contains('main-nav__link')) {
+        evt.preventDefault();
+        this._goToSection(evt.target);
+        this._hide();
+      }
+    });
   }
 
   enable() {

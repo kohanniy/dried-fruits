@@ -62,6 +62,12 @@ export default class Search {
       }
     });
 
+    this._input.addEventListener('input', () => {
+      if (!this._noMatch.classList.contains('hide')) {
+        this.hideResultNoMatch();
+      }
+    });
+
     this._clearButton.addEventListener('click', (evt) => {
       evt.preventDefault();
       this.clear();

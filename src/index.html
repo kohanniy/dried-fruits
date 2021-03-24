@@ -55,28 +55,28 @@
         <span class="main-nav__close-btn main-nav__close-icon"></span>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">Главная</a>
+            <a href="#intro" class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">Товары</a>
+            <a href="#products" class="main-nav__link">Товары</a>
           </li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">Оптовикам</a>
+            <a href="#timer" class="main-nav__link">Оптовикам</a>
           </li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">Производство</a>
+            <a href="#making" class="main-nav__link">Производство</a>
           </li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">О нас</a>
+            <a href="#about-us" class="main-nav__link">О нас</a>
           </li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">Сертификаты</a>
+            <a href="#advantages" class="main-nav__link">Преимущества</a>
           </li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">Преимущества</a>
+            <a href="#certificates" class="main-nav__link">Сертификаты</a>
           </li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">Отзывы</a>
+            <a href="#reviews" class="main-nav__link">Отзывы</a>
           </li>
         </ul>
       </nav>
@@ -312,13 +312,77 @@
         <li data-depth-x="-0.2" class="parallax__layer parallax__layer_pic_small-wave"></li>
       </ul>
     </section>
-    <section>
-      asdfdsfdf<br>
-      asdfdsfdf<br>
-      asdfdsfdf<br>
-      asdfdsfdf<br>
-      asdfdsfdf<br>
-      asdfdsfdf<br>
+    <section class="order">
+      <div class="order__container container">
+        <h2 class="order__title">Отправить заявку и получить самую привлекательную цену</h2>
+        <form class="order__form form">
+          <div class="form__input-wrap form__input-wrap_type_name">
+            <label for="name" class="form__label">Введите ваше имя:</label>
+            <input id="name" name="name" type="text" class="form__input" required>
+          </div>
+          <div class="form__input-wrap form__input-wrap_type_tel">
+            <label for="tel" class="form__label">Ваш телефон:</label>
+            <input id="tel" name="tel" type="tel" class="form__input" required>
+          </div>
+          <div class="form__input-wrap form__input-wrap_type_email">
+            <label for="email" class="form__label">Ваш E-mail:</label>
+            <input id="email" name="email" type="email" class="form__input" required>
+          </div>
+          <div class="form__input-wrap form__input-wrap_type_volume">
+            <label for="volume" class="form__label">Укажите объем:</label>
+            <select id="volume" name="volume" class="form__input form__input_select" required>
+              <option value="20t" class="form__option">От 20 тонн</option>
+              <option value="30t" class="form__option">От 30 тонн</option>
+              <option value="40t" class="form__option">От 40 тонн</option>
+            </select>
+          </div>
+          <button type="submit" class="order-button form__button">Отправить</button>
+        </form>
+      </div>
+    </section>
+    <section id="about-us" class="about-us section">
+      <div class="container about-us__container">
+        <h2 class="section__title">О нас</h2>
+        <p class="section__subtitle">Информация о компании</p>
+        <p>О компании</p>
+      </div>
+    </section>
+    <section id="advantages" class="advantages section">
+      <div class="container advantages__container">
+        <h2 class="section__title">Преимущества</h2>
+        <p class="section__subtitle">Все инспекции и исследования продукции компании «EcoFruit» проходят с высочайшим результатом</p>
+        <p>Преимущества</p>
+      </div>
+    </section>
+    <section id="certificates" class="certificates section">
+      <div class="container certificates__container">
+        <h2 class="section__title">Сертификаты</h2>
+        <p class="section__subtitle">Все инспекции и исследования продукции компании «EcoFruit» проходят с высочайшим результатом</p>
+        <p>Сертификаты</p>
+      </div>
+    </section>
+    <section id="reviews" class="reviews section">
+      <div class="container reviews__container">
+        <h2 class="section__title">Отзывы</h2>
+        <p class="section__subtitle">Что пишут о нас</p>
+        <ul class="reviews__list">
+          <li class="reviews__card card">
+            <div class="card__stars"></div>
+            <blockquote class="card__blockquote">
+              По вкусу изюм в целом понравился, обычный, вкусный. Всегда тщательно промываю изюм и запариваю его для добавления в детские блюда. В моей пачке оказалась часть ягод…
+            </blockquote>
+            <div class="card__author author">
+              <figure class="author__figure">
+                <img src="<%=require('./img/woman-1.jpg')%>" alt="" class="author__photo">
+              </figure>
+              <div class="author__info">
+                <p class="author__name">Роза Мирова</p>
+                <p class="author__about">Домохозяйка</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 </body>

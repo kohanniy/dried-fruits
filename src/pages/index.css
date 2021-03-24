@@ -23,4 +23,37 @@
 @import url(../blocks/parallax.css);
 @import url(../blocks/video.css);
 @import url(../blocks/controls.css);
+@import url(../blocks/order.css);
+@import url(../blocks/form.css);
 
+.reviews {}
+
+.reviews__container {}
+
+.section__title {}
+
+.section__subtitle {}
+
+.reviews__list {}
+
+.reviews__card {}
+
+.card {}
+
+.card__stars {}
+
+.card__blockquote {}
+
+.card__author {}
+
+.author {}
+
+.author__figure {}
+
+.author__photo {}
+
+.author__info {}
+
+.author__name {}
+
+.author__about {}
