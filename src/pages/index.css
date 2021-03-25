@@ -27,6 +27,7 @@
 @import url(../blocks/form.css);
 @import url(../blocks/reviews.css);
 @import url(../blocks/author.css);
+@import url(../blocks/address.css);
 
 
 p {
@@ -36,5 +37,4 @@ p {
 .certificates::after {
   display: none;
 }
-
 

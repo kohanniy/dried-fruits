@@ -39,6 +39,7 @@ Swiper.use([Navigation, Pagination, A11y, Autoplay, EffectCube]);
 
 const makingBg = document.querySelector('.js-scene-1');
 const pageForm = document.querySelector('.order__form');
+const addressLogo = document.querySelector('.address__logo');
 
 const searchArea = new Mark(document.querySelector('.page'));
 const mainNav = new MainNav(mainNavSelectors, scrollTo);
@@ -62,4 +63,8 @@ introSlider.on('slideChangeTransitionEnd', showIntroSlideElements);
 
 pageForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
+});
+
+addressLogo.addEventListener('click', () => {
+  scrollTo(0);
 });

@@ -12,6 +12,10 @@
   margin: 0;
 }
 
+.social__item_place_address {
+  margin-right: 10px;
+}
+
 .social__link {
   display: block;
   text-decoration: none;
@@ -25,4 +29,23 @@
 .social__link:hover {
   color: #6da125;
   transform: scale(1.2);
+}
+
+.social__link_place_address {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #9d9d9c;
+  background: #fff;
+  border-radius: 100%;
+  /* transition: color 0.4s linear, background 0.4s linear; */
+}
+
+.social__link_place_address:hover {
+  color: #fff;
+  background: #6da125;
+  transform: scale(1);
+  border: 1px solid #6da125;
 }

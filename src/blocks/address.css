@@ -1,0 +1,80 @@
+.address {
+  padding: 25px 0 34px;
+}
+
+.address__logo {
+  width: 114px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.address__contacts {
+  margin-bottom: 18px;
+  font-style: normal;
+}
+
+.address__info {
+  margin: 0;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.address__icon {
+  width: 17px;
+  margin-right: 17px;
+}
+
+.address__icon_location {
+  align-self: flex-start;
+}
+
+.address__link {
+  text-decoration: none;
+  display: flex;
+  text-decoration: none;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.address__link_tel::before {
+  content: '';
+  position: absolute;
+  transition: transform .5s ease;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #575756;
+  transform: translateX(-102%);
+  box-sizing: border-box;
+}
+
+.address__link_tel:hover::before {
+  transform: translateX(0);
+}
+
+.address__link_email::before {
+  content: '';
+  position: absolute;
+  transition: transform .5s ease;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #575756;
+  transform: translateX(0);
+  box-sizing: border-box;
+}
+
+.address__link_email:hover::before {
+  transform: translateX(-102%);
+}
+
+.address__text {
+  color: #575756;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.2;
+}
