@@ -17,3 +17,13 @@
     url('./MuseoSansCyrlBold.woff2') format('woff2'),
     url('./MuseoSansCyrlBold.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    url('./MuseoSansCyrlMediumItalic.woff2') format('woff2'),
+    url('./MuseoSansCyrlMediumItalic.woff') format('woff');
+}

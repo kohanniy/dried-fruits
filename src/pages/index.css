@@ -25,35 +25,16 @@
 @import url(../blocks/controls.css);
 @import url(../blocks/order.css);
 @import url(../blocks/form.css);
+@import url(../blocks/reviews.css);
+@import url(../blocks/author.css);
 
-.reviews {}
 
-.reviews__container {}
+p {
+  margin: 0;
+}
 
-.section__title {}
+.certificates::after {
+  display: none;
+}
 
-.section__subtitle {}
 
-.reviews__list {}
-
-.reviews__card {}
-
-.card {}
-
-.card__stars {}
-
-.card__blockquote {}
-
-.card__author {}
-
-.author {}
-
-.author__figure {}
-
-.author__photo {}
-
-.author__info {}
-
-.author__name {}
-
-.author__about {}

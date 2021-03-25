@@ -24,6 +24,7 @@ import {
   productsSliderData,
   countdownSelectors,
   videoPlayerSelectors,
+  reviewsSliderData,
 } from '../utils/constants';
 
 import {
@@ -47,6 +48,7 @@ const videoPlayer = new VideoPlayer(videoPlayerSelectors, convertSecToMin);
 const parallaxMakingBg = new Parallax(makingBg, { hoverOnly: true });
 const productsSlider = new Swiper('.products__slider', productsSliderData);
 const introSlider = new Swiper('.intro__slider', introSliderData);
+const reviewsSlider = new Swiper('.reviews__slider', reviewsSliderData);
 
 mainNav.enable();
 search.enable();

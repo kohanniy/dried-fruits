@@ -1,0 +1,41 @@
+.author {
+  display: flex;
+}
+
+.author__figure {
+  margin: 0;
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.author__photo {
+  width: 100%;
+  object-fit: cover;
+}
+
+.author__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.author__name {
+  margin: 0;
+  margin-bottom: 4px;
+  color: #040007;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.author__about {
+  margin: 0;
+  color: #b2b2b2;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+}

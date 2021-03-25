@@ -53,6 +53,7 @@ export const introSliderData = {
 export const productsSliderData = {
   slidesPerView: 2.3,
   spaceBetween: 15,
+  roundLengths: true,
   navigation: {
     disabledClass: 'products__button_disabled',
     nextEl: '.products__button_next',
@@ -104,4 +105,40 @@ export const videoPlayerSelectors = {
   duration: '.controls__duration',
   overlay: '.video__overlay',
   mainPlayBtn: '.video__play-icon-wrap',
+};
+
+export const reviewsSliderData = {
+  speed: 500,
+  slidesPerView: 1,
+  roundLengths: true,
+  containerModifierClass: 'reviews__slider-',
+  slideClass: 'reviews__card',
+  wrapperClass: 'reviews__slider-wrap',
+  pagination: {
+    el: '.reviews__slider-dots',
+    type: 'bullets',
+    bulletElement: 'li',
+    clickable: true,
+    bulletClass: 'reviews__slider-dot',
+    bulletActiveClass: 'reviews__slider-dot_active',
+    modifierClass: 'reviews__slider-dots-',
+  },
+  a11y: {
+    firstSlideMessage: 'Первый слайд',
+    lastSlideMessage: 'Последний слайд',
+    paginationBulletMessage: 'Перейти к {{index}} слайду',
+  },
+  breakpoints: {
+    575: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1279: {
+      spaceBetween: 30,
+    },
+  },
 };
