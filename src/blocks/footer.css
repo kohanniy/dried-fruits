@@ -1,0 +1,134 @@
+.footer {
+  background: #040007;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, max-content) 1fr;
+  grid-template-areas: 'copyright tas-ix dev payments';
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1350px;
+}
+
+.footer__copyright {
+  grid-area: copyright;
+  margin-right: 70px;
+}
+
+.footer__line {
+  width: 2px;
+  height: 25px;
+  background: #8d8b8b;
+  margin: 0 10px;
+}
+
+.footer__tas-ix {
+  grid-area: tas-ix;
+  width: 82px;
+  margin-right: 88px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__developer {
+  grid-area: dev;
+}
+
+.footer__payments {
+  grid-area: payments;
+  max-width: 310px;
+  display: flex;
+  align-items: center;
+  justify-self: end;
+}
+
+.footer__payments-img {
+  width: 100%;
+}
+
+@media (max-width: 1439px) {
+  .footer__container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1279px) {
+  .footer__container {
+    grid-template-columns: repeat(2, max-content) 1fr;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 20px;
+    grid-template-areas:
+      'copyright tas-ix payments'
+      'dev dev dev';
+  }
+
+  .footer__developer {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__container {
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 20px;
+    grid-template-areas:
+      'copyright dev'
+      'tas-ix payments';
+  }
+
+  .footer__copyright {
+    margin-right: 0;
+  }
+
+  .footer__tas-ix {
+    margin-right: 0;
+  }
+
+  .footer__developer {
+    justify-self: end;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 20px;
+    justify-items: center;
+    grid-template-areas:
+      'copyright'
+      'payments'
+      'dev'
+      'tas-ix';
+  }
+
+  .footer__developer {
+    justify-self: center;
+  }
+
+  .footer__payments {
+    justify-self: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer__copyright {
+    flex-direction: column;
+  }
+
+  .footer__line_place_copyright {
+    width: 25px;
+    height: 2px;
+    background: #8d8b8b;
+    margin: 10px 0;
+  }
+}
+

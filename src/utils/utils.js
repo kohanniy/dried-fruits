@@ -98,6 +98,14 @@ export const convertSecToMin = (time) => {
   return `${min}:${sec}`;
 };
 
+export const setEventListener = (el, callback) => {
+  el.addEventListener('click', () => {
+    callback(0);
+  });
+};
+
+export const getElOffset = (el) => el.getBoundingClientRect().top + window.pageYOffset;
+
 // export function throttle(func, ms) {
 //   let isThrottled = false;
 //   let savedArgs;

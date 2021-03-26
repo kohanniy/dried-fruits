@@ -1,0 +1,17 @@
+.developer {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #8d8b8b;
+}
+
+.developer__text {
+  margin: 0;
+}
+
+.developer__logo {
+  width: 98px;
+}

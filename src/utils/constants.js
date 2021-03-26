@@ -109,7 +109,7 @@ export const videoPlayerSelectors = {
 
 export const reviewsSliderData = {
   speed: 500,
-  slidesPerView: 1,
+  slidesPerView: 3,
   roundLengths: true,
   containerModifierClass: 'reviews__slider-',
   slideClass: 'reviews__card',
@@ -129,6 +129,9 @@ export const reviewsSliderData = {
     paginationBulletMessage: 'Перейти к {{index}} слайду',
   },
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
     575: {
       slidesPerView: 2,
       spaceBetween: 10,

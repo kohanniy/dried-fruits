@@ -1,0 +1,18 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #8d8b8b;
+}
+
+.copyright__name {
+  margin: 0;
+  cursor: pointer;
+}
+
+.copyright__certified {
+  margin: 0;
+}
