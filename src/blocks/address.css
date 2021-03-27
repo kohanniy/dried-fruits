@@ -25,12 +25,13 @@
 
 .address__icon {
   width: 17px;
+  height: 17px;
   margin-right: 17px;
-  display: block;
 }
 
 .address__icon_location {
   align-self: flex-start;
+  height: 24px;
 }
 
 .address__link {
