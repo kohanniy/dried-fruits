@@ -331,9 +331,10 @@
           <div class="form__input-wrap form__input-wrap_type_volume">
             <label for="volume" class="form__label">Укажите объем:</label>
             <select id="volume" name="volume" class="form__input form__input_select" required>
-              <option value="20t" class="form__option">От 20 тонн</option>
-              <option value="30t" class="form__option">От 30 тонн</option>
-              <option value="40t" class="form__option">От 40 тонн</option>
+              <option value="">Вберите нужный объем</option>
+              <option value="20t" selected>От 20 тонн</option>
+              <option value="30t">От 30 тонн</option>
+              <option value="40t">От 40 тонн</option>
             </select>
           </div>
           <button type="submit" class="order-button form__button">Отправить</button>
@@ -521,7 +522,7 @@
         <img class="developer__logo" src="<%=require('./img/dev-logo.svg')%>" alt="логотип разработчика">
       </div>
       <div class="footer__payments">
-        <img class="footer__payments-img" src="<%=require('./img/payment.png')%>" alt="" class="">
+        <img class="footer__payments-img" src="<%=require('./img/payment.png')%>" alt="">
       </div>
     </div>
   </footer>
