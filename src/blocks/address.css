@@ -26,6 +26,7 @@
 .address__icon {
   width: 17px;
   margin-right: 17px;
+  display: block;
 }
 
 .address__icon_location {
