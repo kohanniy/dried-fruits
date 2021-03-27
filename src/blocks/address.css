@@ -9,12 +9,14 @@
 }
 
 .address__contacts {
+  margin: 0;
+  list-style: none;
+  padding: 0;
   margin-bottom: 18px;
   font-style: normal;
 }
 
 .address__info {
-  margin: 0;
   margin-bottom: 10px;
   display: flex;
 }
