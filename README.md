@@ -8,5 +8,6 @@
 - слайдер Swiper
 - анимация Anime JS
 - параллакс-эффект Parallax.js
+- сборка проекта Webpack
 
 [Посмотреть проект в сети](https://dried-fruits.netlify.app/)
